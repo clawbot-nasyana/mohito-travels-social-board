@@ -1,0 +1,22 @@
+{
+  "clientName": "Mohit Travels",
+  "clientSlug": "mohit-travels",
+  "domain": "mohito-travels.com",
+  "logo": "https://www.svgrepo.com/svg/530598/building",
+  "colors": {
+    "primary": "#1E88E5",
+    "secondary": "#43A047",
+    "accent": "#00BCD4"
+  },
+  "gradients": {
+    "primary": "linear-gradient(135deg, #1E88E5 0%, #43A047 100%)",
+    "secondary": "linear-gradient(135deg, #43A047 0%, #00BCD4 100%)"
+  },
+  "fonts": {
+    "heading": "Raleway",
+    "body": "Raleway"
+  },
+  "posts": 6,
+  "ratios": ["1:1", "4:5"],
+  "createdAt": "2026-03-22T13:47:00Z"
+}

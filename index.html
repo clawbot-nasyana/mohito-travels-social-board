@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Mohit Travels — Social Concept Board</title>
+  <meta name="description" content="Interactive social media concept board for Mohit Travels">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.__CLIENT__ = {"clientName": "Mohit Travels", "clientSlug": "mohit-travels", "domain": "mohito-travels.com", "logo": "https://www.svgrepo.com/svg/530598/building", "colors": {"primary": "#1E88E5", "secondary": "#43A047", "accent": "#00BCD4"}, "gradients": {"primary": "linear-gradient(135deg, #1E88E5 0%, #43A047 100%)", "secondary": "linear-gradient(135deg, #43A047 0%, #00BCD4 100%)"}, "fonts": {"heading": "Raleway", "body": "Raleway"}, "posts": 6, "ratios": ["1:1", "4:5"], "createdAt": "2026-03-22T13:47:00Z"};
+    window.__CONCEPTS__ = {"clientSlug": "mohito-travels", "clientName": "Mohit Travels", "generatedAt": "2026-03-22T13:47:00Z", "totalPosts": 6, "varieties": [{"name": "Bold & Minimal", "description": "High contrast designs with large typography and minimal elements. Focus on impact and wanderlust inspiration.", "posts": [{"id": 1, "layout": "STAT_BIG_NUMBER", "content": {"stat": "50+", "label": "Destinations", "subtext": "Across 6 continents waiting for you"}, "ratio": "1:1"}, {"id": 2, "layout": "QUOTE_TESTIMONIAL", "content": {"quote": "Mohit Travels turned our dream honeymoon into reality. Every detail was perfect.", "author": "Sarah & James", "title": "Bali Adventure, 2025"}, "ratio": "4:5"}]}, {"name": "Corporate/Professional", "description": "Trustworthy tone with enterprise-ready feel. Professional language and data-driven messaging for business travelers.", "posts": [{"id": 3, "layout": "SERVICE_3_BULLETS", "content": {"title": "Business Travel Solutions", "bullets": ["24/7 concierge support for urgent changes", "Corporate rates with exclusive partner hotels", "Streamlined expense reporting integration"]}, "ratio": "1:1"}, {"id": 4, "layout": "STAT_BIG_NUMBER", "content": {"stat": "98%", "label": "Client Satisfaction", "subtext": "Based on 10,000+ trips booked in 2025"}, "ratio": "4:5"}]}, {"name": "Playful & Creative", "description": "Fun and energetic approach with approachable voice. Creative language and engaging questions to inspire wanderlust.", "posts": [{"id": 5, "layout": "QUOTE_TESTIMONIAL", "content": {"quote": "I never thought I could afford Japan. They found deals I didn't even know existed!", "author": "Marcus Chen", "title": "Tokyo Explorer"}, "ratio": "1:1"}, {"id": 6, "layout": "SERVICE_3_BULLETS", "content": {"title": "Why Travel With Us?", "bullets": ["Hidden gems only locals know about 🗺️", "Flexible booking — change your mind anytime ✈️", "Travel experts who've been there themselves 🌟"]}, "ratio": "4:5"}]}]};
+  </script>
+</head>
+<body>
+  <div class="page-shell grain">
+    <header class="app-header">
+      <div class="brand-lockup">
+        <div class="brand-mark-wrap">
+          <img class="brand-logo" src="assets/logo.svg" alt="Mohit Travels logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="brand-fallback" aria-hidden="true">MT</div>
+        </div>
+        <div class="brand-copy">
+          <p class="eyebrow">Social concept board</p>
+          <h1>Mohit Travels</h1>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="ratio-toggle" role="group" aria-label="Export ratio">
+          <button class="ratio-button is-active" data-ratio="1:1">1:1</button>
+          <button class="ratio-button" data-ratio="4:5">4:5</button>
+        </div>
+        <button id="downloadAllBtn" class="action-button primary"><span>Download All</span></button>
+      </div>
+    </header>
+    <main class="app-main">
+      <section class="board-intro">
+        <div>
+          <p class="section-kicker">Curated directions</p>
+          <h2>Six social concepts shaped for modern travel storytelling.</h2>
+        </div>
+        <div class="intro-meta">
+          <div class="meta-pill"><span>6</span> posts</div>
+          <div class="meta-pill"><span>3</span> varieties</div>
+          <div class="meta-pill"><span id="activeRatioLabel">1:1</span> export ratio</div>
+        </div>
+      </section>
+      <section id="grid" class="board-grid" aria-live="polite"></section>
+    </main>
+    <footer class="app-footer">
+      <p>© <span id="currentYear"></span> Mohit Travels. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>
