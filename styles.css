@@ -29,7 +29,7 @@ body {
     radial-gradient(circle at 85% 15%, rgba(67, 160, 71, 0.22), transparent 28%),
     radial-gradient(circle at 55% 90%, rgba(0, 188, 212, 0.18), transparent 34%),
     linear-gradient(145deg, #050b12 0%, #08111a 45%, #0d1720 100%);
-  overflow: hidden;
+  overflow-y: auto;
 }
 body::before {
   content: "";
@@ -63,12 +63,7 @@ img, svg { max-width: 100%; height: auto; }
 .action-button { padding: 0.8rem 1.15rem; color: white; font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: 0 14px 32px rgba(0, 188, 212, 0.22); }
 .action-button[disabled] { opacity: 0.72; cursor: progress; }
 .app-main { flex: 1; overflow-y: auto; padding-top: calc(var(--header-height) + 1.25rem); padding-bottom: calc(var(--footer-height) + 1.25rem); }
-.board-intro, .board-grid { width: min(calc(100% - 2rem), var(--board-max)); margin-inline: auto; }
-.board-intro { display: flex; justify-content: space-between; align-items: end; gap: 1rem; padding: 1rem 0 1.35rem; }
-.board-intro h2 { margin: 0; max-width: 12ch; font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 4.5rem); line-height: .95; letter-spacing: -0.04em; }
-.intro-meta { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: flex-end; }
-.meta-pill { padding: 0.85rem 1rem; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid var(--line); color: var(--text-muted); font-size: 0.92rem; }
-.meta-pill span { color: white; font-weight: 800; }
+.board-grid { width: min(calc(100% - 2rem), var(--board-max)); margin-inline: auto; }
 .board-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; padding-bottom: 1rem; }
 .card { display: grid; gap: 0.8rem; padding: 1rem; border-radius: 28px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid var(--line); box-shadow: var(--shadow); }
 .card-meta { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
